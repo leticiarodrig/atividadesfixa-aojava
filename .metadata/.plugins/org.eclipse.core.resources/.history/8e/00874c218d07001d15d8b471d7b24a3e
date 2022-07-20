@@ -1,0 +1,22 @@
+package aulas;
+
+import java.util.Scanner;
+
+public class EntradadadosTeclado {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner leia = new Scanner (System.in);
+		
+		double x = 1025;
+		
+		System.out.println("x está valendo: " + x);
+		
+		System.out.println("Insir um avlor para a variavel x: ");
+		x = leia.nextDouble();
+		
+		System.out.println("O valor de x agora está valendo: " + x);
+		
+	}
+
+}
