@@ -20,6 +20,8 @@ public class operadoresaritmeticos {
 		b = leia.nextInt();
 		
 		System.out.println("A soma de a e b é:" + (a + b));
+		
+		
 	}
 
 }
