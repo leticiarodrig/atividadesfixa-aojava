@@ -28,7 +28,8 @@ public class exercicio1 {
 		int cilouca = 0;
 		int bolos = 0;
 		int invalido = 0;
-
+		char opcao;
+		
 		System.out.println("Em qual candidato voce prentende votar em 2022?");
 		System.out.println("13- Lula Molusco");
 		System.out.println("22- Bolso Nelson");
@@ -39,33 +40,43 @@ public class exercicio1 {
 
 		switch (voto) {
 		case 13:
-			System.out.println("Vc escolheu: Lula Molusco" + lula);
-
+			System.out.println("Vc escolheu: Lula Molusco");
+			lula++;
 			break;
 
 		case 22:
-			System.out.println("Vc escolheu: Bolso Nelson" + bolso);
-
+			System.out.println("Vc escolheu: Bolso Nelson");
+			bolso++;
 			break;
 
 		case 12:
-			System.out.println("Vc escolheu: Cilouca Gomes" + cilouca);
-
+			System.out.println("Vc escolheu: Cilouca Gomes");
+			cilouca++;
 			break;
 
 		case 50:
-			System.out.println("Vc escolheu: Bolos Bolinhos" + bolos);
-
+			System.out.println("Vc escolheu: Bolos Bolinhos");
+			bolos++;
 			break;
 
 		case 0:
-			System.out.println("Candidato Inválido" + invalido);
+			System.out.println("Candidato Inválido" );
 
 			break;
-
+		}	
+			System.out.println("Deseja cadastrar outro voto?");
+			opcao=leia.next().charAt(0);
 			
-
-		}
-
+		while (Character.toLowerCase(opcao) == 's');
+		
+		
+	
+		
+		System.out.println("O candidato Lula Molusco tem"  + lula + "votos");	
+		System.out.println("O candidato Bolso Nelson tem"  + bolso +  " votos");	
+		System.out.println("O candidato Cilouca Gomes tem"  + cilouca + "votos");	
+		System.out.println("O candidato Bolos Bolinhos tem"  + bolos + "votos");	
+		
+	
 	}
 }
